@@ -7,6 +7,7 @@ const config = {
     projectId: "switch-r",
     storageBucket: "switch-r.appspot.com",
     messagingSenderId: "205098820769"
+    xxxxx
 
 }
 
