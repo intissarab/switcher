@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/uploader"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+      <input type="file" *ngIf="!imageURL" (change)= "fileChanged($event)" />  
+      <ion-avatar > 
+      <ion-card *ngIf= "imageURL" >
+          <img  src="https://ucarecdn.com/{{ imageURL }}/" /> 
+          <ion-card-content>
+             
+              <ion-button shape="round" color="primary" (click)="createPost()" >Profile picture</ion-button>
+             </ion-card-content>
+       
+         </ion-card>
+        </ion-avatar>
+  <ion-list>
+  
+      <ion-item>
+        <ion-label position="floating">Change your userName </ion-label>
+        <ion-input type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label position="floating">Bio </ion-label>
+          <ion-input type="text" [(ngModel)]="bio"></ion-input>
+      </ion-item>
+  
+  
+      <ion-item>
+        <ion-text color="secondary">
+        <h1>Private information to verify your account </h1>
+        </ion-text>   
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Phone</ion-label>
+        <ion-input type="number" [(ngModel)]="phone" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">INE </ion-label>
+        <ion-input type="number" [(ngModel)]="ine" > </ion-input>
+      </ion-item>
+  
+     
+  </ion-list>
+  <ion-button fill="solid" expand="full" color="secondary" (click)="edit()" >Submit</ion-button>
+  
+  </ion-content>

@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="secondary">{{user.username}}</ion-title>
+
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-avatar class="image-center">
+        <img src="https://ucarecdn.com/c7d7acc4-2b98-4c2c-b96f-1be6f62ddd94/Sanstitre.png">
+      </ion-avatar> 
+
+    <ion-button fill="solid" expand="full" color="secondary" (click)="gotoEdit()" >Edit profile</ion-button>
+
+    <ion-content>
+        <ion-list>
+            <ion-item>
+      <h6>UserName   :     </h6>
+      <p>{{user.username}}</p>
+            </ion-item>
+            <ion-item>
+      <h6>UserFirst  :     </h6>
+      <p>{{user.firstname}}</p>
+            </ion-item>
+            <ion-item>
+      <h6>Birthday  :    </h6>
+      <p>{{user.birthday}}</p>
+           </ion-item>
+           <ion-item>
+      <h6>Phone  :     </h6>
+      <p>{{user.phone}}</p>
+           </ion-item>
+           <ion-item>
+      <h6>INE  :    </h6>
+      <p>{{user.ine}}</p>
+          </ion-item>
+          <ion-item>
+       <h6>BIO :    </h6>
+       <p>{{user.bio}}</p>
+                  </ion-item>
+        </ion-list>
+
+       
+
+        <ion-fab vertical="bottom" horizontal="end" color="secondary">
+            <ion-fab-button>
+                <ion-icon name="share" ></ion-icon>
+              </ion-fab-button>
+          
+            <ion-fab-list side="top">
+              <ion-fab-button><ion-icon name="logo-facebook" ></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-instagram" ></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-twitter" ></ion-icon></ion-fab-button>
+            </ion-fab-list>
+        
+          
+          </ion-fab>
+
+    
+
+</ion-content>
+	
+
+

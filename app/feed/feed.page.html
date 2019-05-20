@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-avatar slot="end">
+        <img src="https://ucarecdn.com/c7d7acc4-2b98-4c2c-b96f-1be6f62ddd94/Sanstitre.png">
+      </ion-avatar>
+      <ion-item> <h5 padding >        welcome  {{user.username}}</h5></ion-item>
+
+     
+        
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  
+
+    
+    <ion-segment scrollable color="secondary">
+        <ion-segment-button checked>
+          <ion-icon name="home" (click)="gotohome()"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button >
+            <ion-icon name="folder" (click)="gotomyco()"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button>
+            <ion-icon name="folder-open" (click)="gotomyreq()"></ion-icon>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-list>
+     
+
+  
+        <img src="https://ucarecdn.com/c3ccebda-b208-4035-9e4e-873b29c78b52/calend.png"></ion-list>
+         
+       
+  </ion-content>
+
+
+    
+      
+ 
+<ion-content>
+    <ion-item>
+      <ion-searchbar color ="secondary" showCancelButton cancelButtonText="Custom Cancel"></ion-searchbar>
+      
+    </ion-item>
+  </ion-content>
+    
+
+
+   
+
+
+
+ 
