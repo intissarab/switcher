@@ -5,7 +5,7 @@ import { MyrequestsPage } from './myrequests.page';
 
 describe('MyrequestsPage', () => {
   let component: MyrequestsPage;
-  let fixture: ComponentFixture<MyrequestsPage>;
+  let fixture:-- ComponentFixture<MyrequestsPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
