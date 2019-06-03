@@ -3,7 +3,7 @@ import { AngularFirestore } from '@angular/fire/firestore'
 import { UserService } from '../user.service';
 import { AlertController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
-import { AngularFireAuth } from '@angular/fire/auth'
+import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app'
 import { BinaryOperator } from '@angular/compiler';
 import {Http} from '@angular/http';
