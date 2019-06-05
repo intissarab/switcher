@@ -8,7 +8,7 @@ describe('MycrousesPage', () => {
   let fixture: ComponentFixture<MycrousesPage>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
+    TestBed.configureTestingModule({]]
       declarations: [ MycrousesPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
