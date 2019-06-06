@@ -8,7 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { AboutPage } from './about.page';
 
 const routes: Routes = [
-  {
+  {rr
     path: '',
     component: AboutPage
   }
